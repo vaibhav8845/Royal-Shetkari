@@ -25,7 +25,11 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg fixed-top">
         <Link to="/">
-          <img className="navbar-brand ml-4 logo" src="\img\final_logo-removebg-preview.png" alt="Logo" />
+        <img
+  className="navbar-brand ml-4 logo"
+  src={`${process.env.PUBLIC_URL}/img/final_logo-removebg-preview.png`}
+  alt="Logo"
+/>
         </Link>
         <button
           className="navbar-toggler"

@@ -17,11 +17,15 @@ const Home = () => {
       <div className="homepage-container">
         <Carousel className="carousel-container" interval={3000} fade>
           <Carousel.Item>
-            <img
-              className="d-block w-100 carousel-image"
-              src="/img/people-with-laptops-office.jpg"
-              alt="First slide"
-            />
+          <img
+  className="d-block w-100 carousel-image"
+  src={`${process.env.PUBLIC_URL}/img/people-with-laptops-office.jpg`}
+  alt="First slide"
+/>
+
+
+
+
             <Carousel.Caption>
               <div className="caption-content">
                 <h1>{t('homepage.welcome')}</h1>
